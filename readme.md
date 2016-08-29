@@ -15,14 +15,16 @@ $ npm install --save cat-pad
 ```js
 const catPad = require('cat-pad');
 
-catPad('Meow', 5);
-//=> '🐈🐈🐈🐈🐈Meow'
+catPad('Meow', 6);
+//=> '🐈🐈Meow'
 ```
 
 
 ## API
 
-### catPad(input, count)
+### catPad(input, length)
+
+Pads `input` with cats on the left side if it's shorter than `length`. Padding cats are truncated if they exceed `length`.
 
 #### input
 
@@ -30,12 +32,12 @@ Type: `string`
 
 String to pad.
 
-#### count
+#### length
 
 Type: `number`<br>
 Default: `0`
 
-Amount of cats.
+Padding length.
 
 
 ## License

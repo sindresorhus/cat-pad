@@ -1,2 +1,4 @@
 'use strict';
-module.exports = (input, count) => '🐈'.repeat(count) + input;
+const padStart = require('lodash.padstart');
+
+module.exports = (input, length) => padStart(input, length, '🐈');

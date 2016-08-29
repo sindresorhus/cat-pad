@@ -29,6 +29,9 @@
     "string",
     "str"
   ],
+  "dependencies": {
+    "lodash.padstart": "^4.6.1"
+  },
   "devDependencies": {
     "ava": "*",
     "xo": "*"
