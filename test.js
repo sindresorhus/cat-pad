@@ -1,9 +1,9 @@
 import test from 'ava';
-import m from './';
+import catPad from './index.js';
 
-test(t => {
-	t.is(m('Meow', 0), 'Meow');
-	t.is(m('Meow', 1), 'Meow');
-	t.is(m('Meow', 5), '🐈Meow');
-	t.is(m('Meow', 6), '🐈🐈Meow');
+test('main', t => {
+	t.is(catPad('Meow', 0), 'Meow');
+	t.is(catPad('Meow', 1), 'Meow');
+	t.is(catPad('Meow', 5), '🐈Meow');
+	t.is(catPad('Meow', 6), '🐈🐈Meow');
 });

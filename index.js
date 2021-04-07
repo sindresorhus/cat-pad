@@ -1,4 +1,5 @@
-'use strict';
-const padStart = require('lodash.padstart');
+import padStart from 'lodash.padstart';
 
-module.exports = (input, length) => padStart(input, length, '🐈');
+export default function catPad(input, length) {
+	return padStart(input, length, '🐈');
+}

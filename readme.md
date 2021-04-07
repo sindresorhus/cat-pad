@@ -1,22 +1,19 @@
 # ![cat-pad](header.png)
 
-
 ## Install
 
 ```
-$ npm install --save cat-pad
+$ npm install cat-pad
 ```
-
 
 ## Usage
 
 ```js
-const catPad = require('cat-pad');
+import catPad from 'cat-pad';
 
 catPad('Meow', 6);
 //=> '🐈🐈Meow'
 ```
-
 
 ## API
 
@@ -32,12 +29,7 @@ String to pad.
 
 #### length
 
-Type: `number`<br>
+Type: `number`\
 Default: `0`
 
 Padding length.
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
